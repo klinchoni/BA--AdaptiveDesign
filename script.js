@@ -1,5 +1,5 @@
 // Function to detect the device type
-function getDeviceType() {
+  function getDeviceType() {
     const ua = navigator.userAgent;
     console.log(ua);
     if (/tablet|ipad|playbook|silk|android(?!.*mobi)/i.test(ua)) {
@@ -21,4 +21,3 @@ function getDeviceType() {
   // Main logic
   const deviceType = getDeviceType();
   loadScript(deviceType+'.js');
-  
